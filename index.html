@@ -41,16 +41,23 @@
                         <div class="col-md-12 mb-4 white-text text-center text">
                           <h1 class="h1-reponsive gold-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>Pop's pizza place</strong></h1>
                           <h5 class="text-uppercase mb-4 gold-text floater"><strong>For the best pizza in Town!</strong></h5>
-                          <button class="button button1" href="#make-order" >Order Now</button>
+                          <a href="#order">
+                          <button class="button button1" >Order Now</button>
+                          </a>
+                          <div class="arrow"> <a href="#about-us"> <img src="images/arrow.webp" alt=" arrow"width="100px"></a></div>
                         </div>
                       </div>
                     </div>
                   </div> 
+            </div>
+      </div>
+        </div>
+      </div>    
      </header>
      <div class="controls-top text-center" id="about_us"> 
       <h2>About Us</h2>
   </div>
-  <div class="container-fluid section" id="about-us">
+   <div class="container-fluid section" id="about-us">
       <div class="col-sm-12 d-flex flex-xs-column">
         <div class="col-sm-7 img text-center about-img">
             <div class="about-pic">
@@ -62,11 +69,122 @@
         <div class="col-sm-5 align-items-center">
           <div class="content">
             <h3>Who Are We?</h3>
-            <p>Pop's P</p>
+            <p>Pop's Pizza place, Founded in 1960, is the recognized leader in pizza delivery in town, operating a network of company-owned and franchise-owned stores in the Kenyan market. Pop's Pizza Place is a company of exceptional people on a mission to be the best pizza delivery company in the country.</p>
           </div>
         </div>
       </div>
-  </div> -->
-
+  </div>
+ <div class="container" id="menu">
+   <h3 class="menu-text"><strong> OUR MENU </strong></h3>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="./images/pizza_pic2.jpg" alt="pizza_pic2">
+        <p>Boerewors</p>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="images/pizza_pic4.jpg" alt="pizza_pic4">
+        <p>pepperoni</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="./images/pizza_pic5.jpg" alt="pizza_pic5">
+        <p>Chicken Tikka</p>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="./images/pizza_pic6.jpg" alt="pizza_pic6">
+        <p>Mushroom Pizza</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="./images/pizza_pic3.jpg" alt="pizza_pic3">
+        <p>Cheesy pizza</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="./images/pizza_pic8.jpg" alt="pizza_pic8">
+        <p>Meat Deluxe</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="./images/pizza_pic9.jpg" alt="pizza_pic9">
+        <p>Hawaiian Pizza</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="./images/pizza_pic10.jpg" alt="pizza_pic10">
+        <p>Veg pasta Pizza</p>
+      </div>
+    </div>
+ </div>
+ <div class="container">
+ <div class="orders" id="order">
+    <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 order-overlay text-center">
+            <form class="col-sm-6 offset-sm-3 text-center">
+                <label>Pick your pizza Flavour:</label>
+                <select class="custom-select custom-select-md mb-3 flavour" required>
+                    <option value="vegtikka">Veg pasta pizza</option>
+                    <option value="chickentikka">Chicken Tikka</option>
+                    <option value="periperi">pepperoni pizza</option>
+                    <option value="bbq">cheesy pizza</option>
+                    <option value="boerewors">Boerewors</option>
+                    <option value="hawaiian">Hawaiian pizza</option>
+                    <option value="mushroom">Mushroom pizza</option>
+                    <option value="regina">Meat Deluxe</option>
+                </select>
+                <label>Chose your preferred Size:</label>
+                <select class="custom-select custom-select-md mb-3" id="size" required>
+                    <option value="regular">Regular</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="crust">Choose your favorite Crust:</label>
+                <select class="custom-select custom-select-md mb-3" id="crust" required>
+                    <option value="thin">Thin Crust @ Ksh. 100</option>
+                    <option value="thick">Thick Crust @ Ksh. 150</option>
+                    <option value="flatbread">FlatBread Crust @ sh. 180</option>
+                    <option value="custom">Custom Crust @ sh. 280</option>
+                </select>
+                <label>Select Your favourite Toppings</label>
+                <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                    <option value="tomato">Tomato @ sh. 80</option>
+                    <option value="onions">Onions @ sh. 80</option>
+                    <option value="mushroom">Mushroom @ sh. 80</option>
+                    <option value="greenpepper">Green Pepper @ sh. 80</option>
+                    <option value=""></option>
+                    <option value="olives">Olives @ sh. 120</option>
+                    <option value="pineapple">Pineapple @ sh. 120</option>
+                    <option value="sweetcorn">Sweet Corn @ sh. 120</option>
+                    <option value="macon">Macon @ sh. 120</option>
+                    <option value="mince">Mince @ sh. 120</option>
+                    <option value=""></option>
+                    <option value="beef">Beef Peperoni @ sh. 170</option>
+                    <option value="chicken">Periperi Chicken @ sh. 170</option>
+                </select>
+                <label for="number">Number of Pizza's</label>
+                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+            </form>
+            <a href="#summary">
+                <button type="submit" class="btn btn-success checkout" id="checkout">
+                    Checkout
+                </button>
+            </a>
+    </div>
+</div>
 </body>
 </html>
