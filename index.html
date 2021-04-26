@@ -54,8 +54,8 @@
         </div>
       </div>    
      </header>
-     <div class="controls-top text-center" id="about_us"> 
-      <h2>About Us</h2>
+     <div class="about" id="about_us"> 
+      <h3>About Us</h3>
   </div>
    <div class="container-fluid section" id="about-us">
       <div class="col-sm-12 d-flex flex-xs-column">
@@ -75,7 +75,7 @@
       </div>
   </div>
  <div class="container" id="menu">
-   <h3 class="menu-text"><strong> OUR MENU </strong></h3>
+   <h1 class="menu-text"><strong> OUR MENU </strong></h1>
   <div class="row">
     <div class="column">
       <div class="card">
@@ -97,7 +97,6 @@
         <p>Chicken Tikka</p>
       </div>
     </div>
-    
     <div class="column">
       <div class="card">
         <img src="./images/pizza_pic6.jpg" alt="pizza_pic6">
@@ -137,7 +136,7 @@
         <div class="col-sm-8 order-overlay text-center">
             <form class="col-sm-6 offset-sm-3 text-center">
                 <label>Pick your pizza Flavour:</label>
-                <select class="custom-select custom-select-md mb-3 flavour" required>
+                <select class="custom-select custom-select-md mb-3 flavour" id="flavour" required>
                     <option value="vegtikka">Veg pasta pizza</option>
                     <option value="chickentikka">Chicken Tikka</option>
                     <option value="periperi">pepperoni pizza</option>
@@ -149,9 +148,9 @@
                 </select>
                 <label>Chose your preferred Size:</label>
                 <select class="custom-select custom-select-md mb-3" id="size" required>
-                    <option value="regular">Regular</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
+                    <option value="regular">Regular @ ksh. 400</option>
+                    <option value="medium">Medium @ ksh. 700</option>
+                    <option value="large">Large @ ksh. 1000</option>
                 </select>
                 <label for="crust">Choose your favorite Crust:</label>
                 <select class="custom-select custom-select-md mb-3" id="crust" required>
@@ -185,6 +184,46 @@
                 </button>
             </a>
     </div>
+  </div>
+ <div>
+</div>
+      <div class="order-summary" id="sum-order">
+        <h1 class="text-center" id="summary">Order Summary</h1>
+        <h2 class="text-center summary">The Summary of your order is:</h2>
+        <ol id="list" class="text-center sum">
+        </ol>
+    
+    
+        <div class="cdata-overlay">
+            <div class="customerdata row">
+                <div class="col-sm-3"></div>
+                <form action="" class="form-group col-sm-6 data" id="data">
+                    <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
+                    <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
+                    <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
+                    <button class="btn bg-info text-center d-block mx-auto go"  id="go" type="submit">Make Delivery</button>
+                </form>
+    
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+        <div class="d-block mx-auto text-center">
+            <button class='deliver'>Make Delivery</button>
+            <button class='delivernot'>Pick Up</button>
+        </div>
+    </div>
+    </div>
+    </div>
+
+  </div>
+  
+</div>
+<div>
+  <footer>
+
+  </footer>
 </div>
 </body>
+<script src="js/jquery-3.6.0.slim.js"></script>
+<script src="js/script.js"></script>
 </html>
