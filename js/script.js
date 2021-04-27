@@ -11,12 +11,12 @@ $(document).ready(function () {
       let number = $("#number").val();
       console.log(size);
 
-      //Function order
+    
       let order = (f, s, c, t, n, total) => {
           return {f, s, c, t, n, total};
       };
 
-      //check price
+      
       let price, totalPrice;
       switch (flavour) {
           case flavour = "vegpasta":
@@ -376,6 +376,22 @@ $(document).ready(function () {
               break;
 
       }
+
+      switch (crust) {
+        case crust = "thin":
+            totalPrice = totalPrice + 100;
+            break;
+        case crust = "thin":
+            totalPrice = totalPrice + 150;
+            break;
+        case crust = "thin":
+            totalPrice = totalPrice + 180;
+            break;
+        case crust = "thin":
+            totalPrice = totalPrice + 280;
+            break;
+      }
+     
 
      
       let newOrder = order(flavour, size, crust, topping, number, totalPrice);
