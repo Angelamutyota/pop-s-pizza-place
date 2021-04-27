@@ -391,12 +391,9 @@ $(document).ready(function () {
             totalPrice = totalPrice + 280;
             break;
       }
-     
 
-     
       let newOrder = order(flavour, size, crust, topping, number, totalPrice);
       
-
 
       $('.summary').slideDown(2000);
       $('.cdata-overlay').slideUp();
