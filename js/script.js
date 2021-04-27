@@ -381,8 +381,7 @@ $(document).ready(function () {
       let newOrder = order(flavour, size, crust, topping, number, totalPrice);
       
 
-   
-      $(".checkout").click(function () {
+
       $('.summary').slideDown(2000);
       $('.cdata-overlay').slideUp();
       $('#list').slideDown();
@@ -396,9 +395,8 @@ $(document).ready(function () {
           + newOrder.t + "<br>" + " Number of pizzas :    "
           + newOrder.n + "<br>" + "Total Price :  "
           + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
-      })
+     
   });
-
   
   $(".deliver").click(function () {
       $('.summary').slideUp();
