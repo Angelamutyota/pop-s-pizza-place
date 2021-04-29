@@ -5,7 +5,8 @@ $(document).ready(function () {
   $('.deliver').hide();
   $('.pickup').hide();
 
-  $("#checkout").click(function () {
+  $("#checkout").click(function (event) {
+    event.preventDefault()
       let flavour = $(".flavour option:selected").val();
       let size = $("#size option:selected").val();
       let crust = $("#crust option:selected").val();
