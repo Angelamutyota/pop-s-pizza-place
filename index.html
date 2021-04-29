@@ -33,26 +33,7 @@
                       </ul>
                     </div> 
              </div>
-
                 </nav>
-                <div class="mask rgba-black-light align-items-center">
-                    <div class="container" id="head">
-                      <div class="row">
-                        <div class="col-md-12 mb-4 white-text text-center text">
-                          <h1 class="h1-reponsive gold-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 pulse"><strong>Pop's pizza place</strong></h1>
-                          <h5 class="text-uppercase mb-4 gold-text floater"><strong>For the best pizza in Town!</strong></h5>
-                          <a href="#order">
-                          <button class="button button1" >Order Now</button>
-                          </a>
-                          <div class="arrow"> <a href="#about-us"> <img src="images/arrow.webp" alt=" arrow"width="100px"></a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> 
-            </div>
-      </div>
-        </div>
-      </div>    
      </header>
      <div class="about" id="about_us"> 
       <h3>About Us</h3>
@@ -131,10 +112,7 @@
  <div class="container">
  <div class="orders" id="order">
     <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-    <div class="form-group row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 order-overlay text-center">
-            <form class="col-sm-6 offset-sm-3 text-center">
+            <form >
                 <label>Pick a Flavour:</label>
                 <select class="custom-select custom-select-md mb-3 flavour" id="flavour" required>
                     <option value="vegpasta">Veg pasta pizza</option>
@@ -161,52 +139,38 @@
                     <option value="flatbread">FlatBread Crust @ sh. 180</option>
                     <option value="custom">Custom Crust @ sh. 280</option>
                 </select>
-                <label>choose Toppings</label>
+                <label>choose Toppings @100</label>
                 <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                    <option value="0">select toppings here</option>
-                    <option value="tomato">Tomato @ sh. 80</option>
-                    <option value="onions">Onions @ sh. 80</option>
-                    <option value="mushroom">Mushroom @ sh. 80</option>
-                    <option value="greenpepper">Green Pepper @ sh. 80</option>
-                    <option value=""></option>
-                    <option value="olives">Olives @ sh. 120</option>
-                    <option value="pineapple">Pineapple @ sh. 120</option>
-                    <option value="sweetcorn">Sweet Corn @ sh. 120</option>
-                    <option value="macon">Macon @ sh. 120</option>
-                    <option value="mince">Mince @ sh. 120</option>
-                    <option value=""></option>
-                    <option value="beef">Beef Peperoni @ sh. 170</option>
-                    <option value="chicken">Periperi Chicken @ sh. 170</option>
+                  <option value="0">select toppings..</option>
+                    <option value="olives">Olives </option>
+                    <option value="pineapple">Pineapple </option>
+                    <option value="sweetcorn">Sweet Corn </option>
+                    <option value="macon">Macon </option>
+                    <option value="mince">Mince </option>
+                  
                 </select>
                 <label for="number">no. of pizzas</label>
                 <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-
-            </form>
             <a href="#summary">
                 <button type="submit" class="btn btn-success checkout" id="checkout">
                     Check out
                 </button>
               </a>
        </div>
-     </div>
-    </div>
-  </div>
  </form>
 </div>
 <div class="order-summary" id="sum-order">
-  <h1 class="text-center" id="summary">Order Summary</h1>
+  <p class="text-center" id="summary">the summary of your order will be displayed below:</p>
   <ol id="list" class="text-center sum">
   </ol>
 
 
   <div class="cdata-overlay">
-      <div class="customerdata row">
-          <div class="col-sm-3"></div>
-          <form action="" class="form-group col-sm-6 data">
+      <form action="">
               <input type="text" class="form-control cdata" placeholder=" Name:">
               <input type="text" class="form-control cdata" placeholder="phone number: ">
               <input type="text" class="form-control cdata" placeholder="location: ">
-              <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+              <button class="btn bg-success text-center d-block mx-auto go">Make Delivery</button>
           </form>
 
           <div class="col-sm-3"></div>
@@ -214,7 +178,7 @@
   </div>
   <div class="d-block mx-auto text-center">
       <button class='deliver'>Make Delivery</button>
-      <button class='delivernot'>Pick Up</button>
+      <button class='pickup'>Pick Up</button>
   </div>
 </div>
 </body>
