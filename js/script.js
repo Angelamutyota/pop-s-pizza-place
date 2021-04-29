@@ -85,7 +85,6 @@ $(document).ready(function () {
           + newOrder.n + "<br>" + "Total Price :  "
           + newOrder.total + "<br><br>").css('font-family', 'Times New Roman').css('font-size', '24px');
    
-     
   });
   
   $(".deliver").click(function () {
