@@ -23,13 +23,13 @@ $(document).ready(function () {
       let price, totalPrice;
       switch (size) {
           case size = "regular":
-              totalPrice = 400;
+              totalPrice = 400 * number;
               break;
             case size = "medium":
-              totalPrice = 700;
+              totalPrice = 700 * number;
               break;
             case size = "large":
-              totalPrice = 1000;
+              totalPrice = 1000 * number;
               break;
               
       }
@@ -69,6 +69,7 @@ $(document).ready(function () {
       }
 
       let newOrder = order(flavour, size, crust, topping, number, totalPrice);
+      
       
  
       $('.summary').slideDown(2000);
