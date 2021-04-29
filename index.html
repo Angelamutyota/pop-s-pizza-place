@@ -135,7 +135,7 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-8 order-overlay text-center">
             <form class="col-sm-6 offset-sm-3 text-center">
-                <label>Pick your pizza Flavour:</label>
+                <label>Pick a Flavour:</label>
                 <select class="custom-select custom-select-md mb-3 flavour" id="flavour" required>
                     <option value="vegpasta">Veg pasta pizza</option>
                     <option value="chickentikka">Chicken Tikka</option>
@@ -146,14 +146,14 @@
                     <option value="mushroom">Mushroom pizza</option>
                     <option value="deluxe">Meat Deluxe</option>
                 </select>
-                <label>Chose your preferred Size:</label>
+                <label>size of pizza:</label>
                 <select class="custom-select custom-select-md mb-3" id="size" required>
                     <option value="0">select size..</option>
                     <option value="regular">Regular @ ksh. 400</option>
                     <option value="medium">Medium @ ksh. 700</option>
                     <option value="large">Large @ ksh. 1000</option>
                 </select>
-                <label for="crust">Choose your favorite Crust:</label>
+                <label for="crust">choose the pizza Crust:</label>
                 <select class="custom-select custom-select-md mb-3" id="crust" required>
                   <option value="0">Select crust..</option>
                     <option value="thin">Thin Crust @ Ksh. 100</option>
@@ -161,7 +161,7 @@
                     <option value="flatbread">FlatBread Crust @ sh. 180</option>
                     <option value="custom">Custom Crust @ sh. 280</option>
                 </select>
-                <label>Select Your favourite Toppings</label>
+                <label>choose Toppings</label>
                 <select class="custom-select custom-select-md mb-3" id="toppings" required>
                     <option value="0">select toppings here</option>
                     <option value="tomato">Tomato @ sh. 80</option>
@@ -178,7 +178,7 @@
                     <option value="beef">Beef Peperoni @ sh. 170</option>
                     <option value="chicken">Periperi Chicken @ sh. 170</option>
                 </select>
-                <label for="number">Number of Pizza's</label>
+                <label for="number">no. of pizzas</label>
                 <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
 
             </form>
@@ -195,7 +195,6 @@
 </div>
 <div class="order-summary" id="sum-order">
   <h1 class="text-center" id="summary">Order Summary</h1>
-  <h2 class="text-center summary">Hello there, your order is as follows:</h2>
   <ol id="list" class="text-center sum">
   </ol>
 
@@ -204,9 +203,9 @@
       <div class="customerdata row">
           <div class="col-sm-3"></div>
           <form action="" class="form-group col-sm-6 data">
-              <input type="text" class="form-control cdata" placeholder="Enter your Name:">
-              <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
-              <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+              <input type="text" class="form-control cdata" placeholder=" Name:">
+              <input type="text" class="form-control cdata" placeholder="phone number: ">
+              <input type="text" class="form-control cdata" placeholder="location: ">
               <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
           </form>
 
@@ -222,35 +221,36 @@
 <div>
   <footer>
     <div class="container-fluid">
-      <div class="card">
-        <div class="jumbotron" id="contact">
-          <h3><strong> Contact Us</strong></h3>
-          <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-5 subs">
-                <h1 class="text-white text-center"> Call Us </h1>
-                <p class="text-center">+254 611555777</p>
-                <form>
-                    <div class="email-info">
-                        <div class="form-group fill-all-form">
-                            <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
-                                   required="">
-                        </div>
-                    </div>
-                    <div class=" email-info text-center">
-                        <button class="btn bg-success click-me" onclick="subscribe();">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-sm-5">
-                <h4 class="text-center get-pizza">We love feedback..send us a mail</h4>
-                <p>popspizza@gmail.com</p>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
+        <div class="jumbotron">
+          <div class="contact" id="contact">
+          <h1 class=" text-center text-white"> Contact Us: </h1>
+          <p class=" text-center text-white">+254 611555777 / popspizza@gmail.com</p>
+         <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5 subs">
+              <form>
+                  <div class="email-info">
+                      <div class="form-group fill-all-form">
+                          <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
+                                 required="">
+                          <input type="phone" class="form-control bg-transparent phone" id="phone" placeholder="phone number"
+                                 required="">
+                      </div>
+                  </div>
+                  
+              </form>
+          </div>
+          <div class="col-sm-5 feedback">
+              <textarea class="form-control bg-transparent text" id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+          </div>
+          <div class="col-sm-1"></div>
+      </div>
+      <div class=" email-info text-center">
+        <button type="submit" class="btn bg-secondary click-me" onclick="submit();">Submit</button>
     </div>
-    </div>
-        </div>
+  </div>
+  </div>
+        </div> 
       </div>
     </div>
   </footer>
